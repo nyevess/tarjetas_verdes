@@ -1,70 +1,94 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <!-- SEO = Básico -->
-    <title></title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- SEO = Redes Sociales -->
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
+<head>
+  <meta charset="utf-8" />
+  <!-- SEO = Básico -->
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- App Web, inidicar al navegador que elementos mostrar en un JSON -->
-    <link rel="manifest" href="site.webmanifest" />
-    <!-- icono de acceso para IOS -->
-    <link rel="apple-touch-icon" href="icon.png" />
-    <!-- Recordar que favicon.ico tiene que estar en el directorio inicial -->
+  <!-- SEO = Redes Sociales -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
 
-    <!-- links de estilos -->
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/index.css" />
-    <!-- Se cambia el tema de algunos navegadores -->
-    <meta name="theme-color" content="#fafafa" />
-  </head>
-  <body>
-    <!-- *** ESTRUCTURA SEMÁNTICA *** -->
-    <!-- Header (encabezado de la página, zona superior) -->
-    <header>
-      <!-- nav (el navegador de toda la web) -->
-     
-    </header>
-    <!-- Main (centro de la página, zona central) -->
-    <main>
-  <section class="atomos">
-<h1 class="atomos_titulo">- Title 1 -</h1>
-<h2 class="atomos_titulo2"> - SubTitle 1 -</h2>
-<article class="atomos_cajaCirculos">
-  <div class="atomos_circulo"></div>
-  <div class="atomos_circulo"></div>
-  <div class="atomos_circulo"></div>
-</article>
+  <!-- App Web, inidicar al navegador que elementos mostrar en un JSON -->
+  <link rel="manifest" href="site.webmanifest" />
+  <!-- icono de acceso para IOS -->
+  <link rel="apple-touch-icon" href="icon.png" />
+  <!-- Recordar que favicon.ico tiene que estar en el directorio inicial -->
 
-<article class="atomos_texto">
-  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti nulla aspernatur amet. Illo ratione ad quas repellat quos voluptatem recusandae necessitatibus fugiat, voluptas, non asperiores? Repellat voluptatum alias est aspernatur, enim sit vel corrupti blanditiis deleniti accusamus id cumque porro quibusdam error libero nostrum qui molestiae neque at, perferendis quae.</p>
-  <button type="submit" class="atomos_botonRojo">Button</button>
-</article>
+  <!-- links de estilos -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <!-- Se cambia el tema de algunos navegadores -->
+  <meta name="theme-color" content="#fafafa" />
+</head>
 
-<form action="">
-  <label for="">TEXT OF INPUT</label>
-  <input type="email" class="atomos_form_email" placeholder="Email@email.com">
-  <button type="submit" class="atomos_form_botonLila">Button</button>
-</form>
+<body>
+  <!-- *** ESTRUCTURA SEMÁNTICA *** -->
+  <!-- Header (encabezado de la página, zona superior) -->
+  <header>
+    <!-- nav (el navegador de toda la web) -->
 
-  </section>  
- 
+  </header>
+  <!-- Main (centro de la página, zona central) -->
+  <main>
+    <section class="composicion">
+      <section class="compo_derecha">
+        <article class="compo_cajaCirculos">
+          <div class="compo_circulos1"></div>
+          <div class="compo_circulos2"></div>
+          <div class="compo_circulos1"></div>
+        </article>
 
-    </main>
-    <!-- Footer (final de la página, zona inferior) -->
-    <footer>
-    
-    </footer>
+        <article class="compo_formu">
 
-    <!-- *** Google Analytics *** -->
-    <script src="https://www.google-analytics.com/analytics.js" async></script>
-  </body>
+          <form action="">
+            <h1 class="compo_formuTitulo">Title</h1>
+            <input type="text" name="" id="" placeholder="introduce tu nombre">
+            <input type="email" placeholder="introduce tu email">
+
+
+            <article class="compo_formFlechaBoton">
+              <svg class="flecha" width="36" height="36" viewBox="0 0 36 36" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M35.4375 18C35.4375 8.36719 27.6328 0.5625 18 0.5625C8.36719 0.5625 0.5625 8.36719 0.5625 18C0.5625 27.6328 8.36719 35.4375 18 35.4375C27.6328 35.4375 35.4375 27.6328 35.4375 18ZM3.9375 18C3.9375 10.2305 10.2305 3.9375 18 3.9375C25.7695 3.9375 32.0625 10.2305 32.0625 18C32.0625 25.7695 25.7695 32.0625 18 32.0625C10.2305 32.0625 3.9375 25.7695 3.9375 18ZM9 19.4062V16.5938C9 16.1297 9.37969 15.75 9.84375 15.75H18V11.0391C18 10.2867 18.907 9.91406 19.4414 10.4414L26.4023 17.4023C26.7328 17.7328 26.7328 18.2672 26.4023 18.5977L19.4414 25.5586C18.907 26.093 18 25.7133 18 24.9609V20.25H9.84375C9.37969 20.25 9 19.8703 9 19.4062Z"
+                  fill="#D94545" />
+              </svg>
+              <button type="submit">Enviar</button>
+            </article>
+          </form>
+        </article>
+      </section>
+
+      <section class="compo_izq">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo distinctio sequi mollitia esse ut dicta,
+          placeat incidunt, temporibus quia impedit harum pariatur. Fugiat, vel placeat! Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Nostrum ut, sint fugit rerum deserunt incidunt odio voluptate quasi asperiores
+          nemo illo temporibus reprehenderit ea excepturi qui illum assumenda repellat a aspernatur. Asperiores beatae
+          voluptatum reiciendis explicabo sunt fugiat alias sed odio vitae ducimus! Veniam distinctio nemo, facilis
+          repellendus nesciunt assumenda?
+          Lorem, ipsum dolor sit
+        </p>
+      </section>
+    </section>
+
+
+
+  </main>
+  <!-- Footer (final de la página, zona inferior) -->
+  <footer>
+
+  </footer>
+
+  <!-- *** Google Analytics *** -->
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
 </html>

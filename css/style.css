@@ -6,7 +6,7 @@
 @font-face {
     font-family: "roboto";
     src        : url("../font/roboto.woff2") format("woff2"),
-        url(../font/roboto.woff) format("woff");
+        url("../font/roboto.woff") format("woff");
 }
 
 @font-face {
@@ -18,64 +18,106 @@
 
 /* ******************************** */
 
-/* Colores */
 
-/* ******************************** */
-main {
-    padding    : 20px;
+
+main{
+    height: 1000px;
     font-family: "roboto";
-    width: 400px;
+
 }
 
-.atomos_titulo2 {
-    font-family: "robotoi";
-}
-
-.atomos_circulo {
-    width           : 41px;
-    height          : 35px;
-    background-color: #AB44FF;
-    border          : 2px solid #C2E30B;
-    border-radius   : 50%;
-}
-
-.atomos_circulo:hover {
-    background-color: #C2E30B;
-    border          : 2px solid #AB44FF;
-}
-
-/* posicion circulos */
-
-.atomos_cajaCirculos {
+/* alineacion de cada caja a drcha e izq */
+.composicion{
+    width: 700px;
     display: flex;
 }
 
-.atomos_botonRojo {
-    background-color: white;
-    border          : 3px solid #E3190B;
-    width           : 100px;
-
-    margin: 20px 0 20px 0;
+/* colores y tamaño circulos */
+.compo_circulos1{
+   background-color: #D94545; 
+   width: 64px;
+   height: 64px;
+   border-radius: 50%;
 }
 
-.atomos_botonRojo:hover {
-    background-color: #E3190B;
-    color           : white;
+.compo_circulos2{
+background-color:#E29A9A ;
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
 }
 
-.atomos_form_email {
-    background-color: white;
-    border          : 3px solid #E3190B;
+/* colores formulario y margenes padding */
 
+.compo_formuTitulo{
+    color:#D94545;
 }
-::placeholder{
-    color:#E3190B;
-    }
 
-.atomos_form_botonLila {
-    background-color: #AB44FF;
-    color           : white;
-    border          : 0;
-    padding         : 3px;
-    width: 100px;
+input{
+    background-color: #E29A9A;
+    border: 3px solid #D94545;
+    padding: 5px;
+    margin: 15px 0 15px 0;
+}
+
+button{
+    background-color: #E29A9A;
+    border: 3px solid #D94545;
+    padding: 5px 20px 5px 20px;
+    width: 50%;
+
+    position:absolute;
+    right: 0;
+    
+}
+
+/* direccion zona izq y zona drcha */
+
+
+.compo_derecha, .compo_izq{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    
+}
+
+/* disposicion circulos */
+.compo_cajaCirculos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+/* distribucion formulario */
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* distribuir el espacio de
+la flecha y el boton enviar */
+.compo_formFlechaBoton{
+    width: 100%;
+    display: flex;
+    justify-content:space-between ;
+    position: relative;
+}
+
+.flecha{
+    position: absolute;
+       left: 35%;
+  
+}
+
+/* caja izquierda */
+.compo_izq{
+    border: 3px solid #D94545;
+    border-radius: 5px;   
+}
+p{
+    margin: 20px;
 }
