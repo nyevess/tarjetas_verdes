@@ -4,9 +4,16 @@
 
 /* Tipografía */
 @font-face {
-    font-family: "";
-    src: url("") format("woof2"),
-         url("") format("woof");
+    font-family: "roboto";
+    src        : url("../font/roboto.woff2") format("woff2"),
+        url(../font/roboto.woff) format("woff");
+}
+
+@font-face {
+    font-family: "robotoi";
+    src        : url("../font/robotoi.woff2") format("woff2"),
+        url("../font/robotoi.woff") format("woff");
+
 }
 
 /* ******************************** */
@@ -14,4 +21,61 @@
 /* Colores */
 
 /* ******************************** */
+main {
+    padding    : 20px;
+    font-family: "roboto";
+    width: 400px;
+}
 
+.atomos_titulo2 {
+    font-family: "robotoi";
+}
+
+.atomos_circulo {
+    width           : 41px;
+    height          : 35px;
+    background-color: #AB44FF;
+    border          : 2px solid #C2E30B;
+    border-radius   : 50%;
+}
+
+.atomos_circulo:hover {
+    background-color: #C2E30B;
+    border          : 2px solid #AB44FF;
+}
+
+/* posicion circulos */
+
+.atomos_cajaCirculos {
+    display: flex;
+}
+
+.atomos_botonRojo {
+    background-color: white;
+    border          : 3px solid #E3190B;
+    width           : 100px;
+
+    margin: 20px 0 20px 0;
+}
+
+.atomos_botonRojo:hover {
+    background-color: #E3190B;
+    color           : white;
+}
+
+.atomos_form_email {
+    background-color: white;
+    border          : 3px solid #E3190B;
+
+}
+::placeholder{
+    color:#E3190B;
+    }
+
+.atomos_form_botonLila {
+    background-color: #AB44FF;
+    color           : white;
+    border          : 0;
+    padding         : 3px;
+    width: 100px;
+}
