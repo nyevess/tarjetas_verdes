@@ -18,106 +18,163 @@
 
 /* ******************************** */
 
-
-
+/* tamaño y colores del complemento
+tarjeta */
+html{
+    height: 100vh;
+}
 main{
-    height: 1000px;
     font-family: "roboto";
-
-}
-
-/* alineacion de cada caja a drcha e izq */
-.composicion{
-    width: 700px;
+    color: white;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
 }
 
-/* colores y tamaño circulos */
-.compo_circulos1{
-   background-color: #D94545; 
-   width: 64px;
-   height: 64px;
-   border-radius: 50%;
+header, footer{
+    background: linear-gradient(to left bottom, #00aaa9, #57bfb0, #84d3ba, #ade7c7, #d3fbd8);
+    height: 20vh;
 }
 
-.compo_circulos2{
-background-color:#E29A9A ;
-    width: 104px;
-    height: 104px;
-    border-radius: 50%;
-}
-
-/* colores formulario y margenes padding */
-
-.compo_formuTitulo{
-    color:#D94545;
-}
-
-input{
-    background-color: #E29A9A;
-    border: 3px solid #D94545;
-    padding: 5px;
-    margin: 15px 0 15px 0;
-}
-
-button{
-    background-color: #E29A9A;
-    border: 3px solid #D94545;
-    padding: 5px 20px 5px 20px;
-    width: 50%;
-
-    position:absolute;
-    right: 0;
-    
-}
-
-/* direccion zona izq y zona drcha */
-
-
-.compo_derecha, .compo_izq{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    
-}
-
-/* disposicion circulos */
-.compo_cajaCirculos{
+header{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/* disposicion links del navegador y color
+letra */
+
+nav{
+    display: flex;
     justify-content: space-around;
+    flex-grow: 2;
     
 }
 
-/* distribucion formulario */
-
-form{
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+/* LOGO */
+.Header_logo{
+color:white;
+        font-weight: bold;
+        background:linear-gradient(to right top, #ff5887, #ff7165, #ff973e, #ffc210, #e2eb12); ;
+        border-radius: 50%;
+        font-size: 30px;
+        border: 5px double white;
+        width: 70px;
+    height: 70px;
     display: flex;
+    justify-content: center;
+    align-content: center;
     flex-direction: column;
-    justify-content: space-between;
 }
 
-/* distribuir el espacio de
-la flecha y el boton enviar */
-.compo_formFlechaBoton{
-    width: 100%;
+/* Diseño de tarjeta, universal para las tres */
+.tarjeta{
+    height: 350px;
+    width: 300px;
+    border-radius: 15px;
+    background: linear-gradient(to left bottom, #00aaa9, #57bfb0, #84d3ba, #ade7c7, #d3fbd8);
+    box-shadow: 10px 10px 10px  #E2B659;
+}
+
+/* tamaño foto y bordes  el fondo solo se queda en este
+porque en los demas figure les he dado otra clase
+*/
+figure{
+    width: 300px;
+    height: 150px;
+    background: url("https://images.unsplash.com/photo-1600103698130-f70ace056ac2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1491&q=80");
+    margin: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* color fuente pie de foto  para todas las tatjetas*/
+figcaption{
+    padding: 6px;
+    color: #E2B659;
+    font-weight: bold;
+    
+}
+
+/* toda la caja de texto */
+.texto{
     display: flex;
-    justify-content:space-between ;
+    flex-direction: column;
+    align-items: center;
+    padding: 6px;
+    text-align: center;
+}
+
+
+/* caja que incluye el titulo y 
+el circulo del precio */
+.texto_tituloCirculo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     position: relative;
 }
 
-.flecha{
+/* posicion y colores
+del circulo del precio */
+.precio{
     position: absolute;
-       left: 35%;
-  
+    left: 80px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    
+        color:white;
+        font-weight: bold;
+        background:linear-gradient(to right top, #ff5887, #ff7165, #ff973e, #ffc210, #e2eb12); ;
+        border-radius: 50%;
+        font-size: 30px;
+        border: 5px double white;
 }
 
-/* caja izquierda */
-.compo_izq{
-    border: 3px solid #D94545;
-    border-radius: 5px;   
-}
+
 p{
-    margin: 20px;
+    line-height: 1.5rem;
+}
+
+/* cambio de fondo de la 2ª tarjeta */
+.uno{
+
+    background: url("https://images.unsplash.com/photo-1599813862658-927ff07f4e52?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1378&q=80");
+}
+
+/* Cambio de fondo de la 3ª tarjeta */
+.dos{
+background: url("https://images.unsplash.com/photo-1599929030406-9eb77b536798?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+}
+
+/* Distribucion de los ul en footer */
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+ul{
+    list-style: none;
+    color:white;
+       font-size: 20px;
+
+}
+
+li{
+    text-align: center;
 }
